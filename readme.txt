@@ -90,7 +90,7 @@ git clone https://github.com/aqualinqs/AudioPhile-Estore.github.io.git
 
 ## 🌍 Live Demo
 
-👉 [https://aqualinqs.github.io/AudioPhile-Estore/index.html](https://aqualinqs.github.io/AudioPhile-Estore/index.html)
+👉 [https://aqualinqs.github.io/AudioPhile-Estore](https://aqualinqs.github.io/AudioPhile-Estore)
 
 ---
 
