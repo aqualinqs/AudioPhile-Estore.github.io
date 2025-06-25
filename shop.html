@@ -6,14 +6,17 @@
   <title>Shop - AudioPhile Estore</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <header class="bg-white py-4 px-6 flex justify-between items-center shadow">
-    <h1 class="text-xl font-bold text-orange-600">AudioPhile Estore</h1>
-        <h2 class="text-xl font-bold text-orange-600">Happy shopping!</h2>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-red-300 shadow py-4 px-6 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-black-600">AudioPhile Estore</h1>
     <nav class="space-x-4">
-      <a href="home.html" class="text-gray-700 hover:text-orange-500">Home</a>
-      <a href="cart.html" class="text-gray-700 hover:text-orange-500">Cart</a>
-      <a href="login.html" class="text-gray-700 hover:text-orange-500">Login</a>
+      <a href="home.html" class="text-center mt-2 w-full bg-red-300 text-black-800 py-2 rounded hover:bg-gray-50">Home</a>
+      <a href="shop.html?category=headphones" class="text-center mt-2 w-full bg-red-300 text-black-800 py-2 rounded hover:bg-gray-50">Headphones</a>
+      <a href="shop.html?category=speakers" class="text-center mt-2 w-full bg-red-300 text-black-800 py-2 rounded hover:bg-gray-50">Speakers</a>
+      <a href="shop.html?category=earphones" class="text-center mt-2 w-full bg-red-300 text-black-800 py-2 rounded hover:bg-gray-50">Earphones</a>
+      <a href="cart.html" class="text-center mt-2 w-full bg-red-300 text-black-800 py-2 rounded hover:bg-gray-50">
+        🛒 <span id="cart-count" class="text-xs bg-orange-500 text-white px-2 rounded-full absolute top-0 right-0">0</span>
+      </a>
     </nav>
   </header>
   
@@ -40,40 +43,40 @@
   </div>
 <script src="js/chatbot.js"></script>
 
-  <main class="p-8">
-    <h2 class="text-3xl font-semibold mb-6 text-center">All Products</h2>
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+  <main class="p-6">
+    <h2 class="text-2xl font-semibold mb-6 text-center">Explore Our Products</h2>
+    <div id="product-grid" class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
       <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
         <img src="assets\cart\image-xx99-mark-one-headphones.jpg" alt="XX99 Mark I" class="w-full h-48 object-cover rounded mb-4">
         <h3 class="text-lg font-bold">XX99 Mark I Headphones</h3>
         <p class="text-sm text-gray-600 mb-2">Classic design with exceptional audio fidelity.</p>
-        <p class="text-orange-600 font-semibold mb-3">$1,299.00</p>
-        <a href="product.html" class="block text-center bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded">View Details</a>
-        <button class="mt-2 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Add to Cart</button>
+        <p class="text-orange-600 font-semibold mb-3">$1,750.00</p>
+        <a href="products.html" class="block text-center bg-red-500 hover:bg-gray-300 text-white py-2 px-4 rounded">View Product</a>
+        <button type="submit" class="mt-2 w-full bg-blue-600 text-white py-2 rounded hover:bg-gray-300">Add to Cart</button>
       </div>
       <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
         <img src="assets\cart\image-xx99-mark-two-headphones.jpg" alt="XX99 Mark II" class="w-full h-48 object-cover rounded mb-4">
         <h3 class="text-lg font-bold">XX99 Mark II Headphones</h3>
         <p class="text-sm text-gray-600 mb-2">Top-tier noise cancellation and comfort fit.</p>
-        <p class="text-orange-600 font-semibold mb-3">$1,999.00</p>
-        <a href="product.html" class="block text-center bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded">View Details</a>
-        <button class="mt-2 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Add to Cart</button>
+        <p class="text-orange-600 font-semibold mb-3">$2,999.00</p>
+        <a href="products.html" class="block text-center bg-red-500 hover:bg-gray-300 text-white py-2 px-4 rounded">View Product</a>
+        <button type="submit" class="mt-2 w-full bg-blue-600 text-white py-2 rounded hover:bg-gray-300">Add to Cart</button>
       </div>
       <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
         <img src="assets\cart\image-xx59-headphones.jpg" alt="XX959" class="w-full h-48 object-cover rounded mb-4">
         <h3 class="text-lg font-bold">XX59 Headphones</h3>
         <p class="text-sm text-gray-600 mb-2">Noise cancellation and comfort fit.</p>
         <p class="text-orange-600 font-semibold mb-3">$1,199.00</p>
-        <a href="product.html" class="block text-center bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded">View Details</a>
-        <button class="mt-2 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Add to Cart</button>
+        <a href="products.html" class="block text-center bg-red-500 hover:bg-gray-300 text-white py-2 px-4 rounded">View Product</a>
+        <button type="submit" class="mt-2 w-full bg-blue-600 text-white py-2 rounded hover:bg-gray-300">Add to Cart</button>
       </div>
       <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
         <img src="assets\cart\image-yx1-earphones.jpg" alt="YX1" class="w-full h-48 object-cover rounded mb-4">
         <h3 class="text-lg font-bold">YX1 Earphones</h3>
         <p class="text-sm text-gray-600 mb-2">exceptional headless and comfort fit.</p>
-        <p class="text-orange-600 font-semibold mb-3">$1,000.00</p>
-        <a href="product.html" class="block text-center bg-orange-500 hover:bg-orange-600 text-white py-2 px-4 rounded">View Details</a>
-        <button class="mt-2 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Add to Cart</button>
+        <p class="text-orange-600 font-semibold mb-3">$599.00</p>
+        <a href="products.html" class="block text-center bg-red-500 hover:bg-gray-300 text-white py-2 px-4 rounded">View Product</a>
+        <button type="submit" class="mt-2 w-full bg-blue-600 text-white py-2 rounded hover:bg-gray-300">Add to Cart</button>
       </div>
       <!-- Add more product cards as needed -->
     </div>
@@ -82,6 +85,26 @@
   <footer class="text-center py-6 bg-gray-900 text-white mt-10">
     &copy; 2025 AudioPhile Estore. All rights reserved.
   </footer>
+
+  <script src="js/cart.js"></script>
+  <script>
+    fetch('products.json')
+      .then(res => res.json())
+      .then(data => {
+        const category = new URLSearchParams(window.location.search).get("category");
+        const container = document.getElementById("product-grid");
+        const filtered = category ? data.filter(p => p.category === category) : data;
+
+        container.innerHTML = filtered.map(product => `
+          <div class="bg-white rounded shadow p-4 hover:shadow-lg transition">
+            <img src="${product.image.mobile}" class="w-full h-48 object-cover rounded mb-4">
+            <h3 class="font-bold">${product.name}</h3>
+            <p class="text-red-300 font-semibold mb-2">$${product.price}</p>
+            <a href="product.html?slug=${product.slug}" class="block bg-red-300 text-white py-2 px-4 rounded text-center mt-2 hover:bg-orange-600">View Product</a>
+          </div>
+        `).join('');
+      });
+  </script>
 </body>
 </html>
 
