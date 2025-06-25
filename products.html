@@ -6,14 +6,13 @@
   <title>Product Details - AudioPhile Estore</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100 text-gray-900">
-  <header class="bg-white py-4 px-6 shadow flex justify-between items-center">
-    <h1 class="text-xl font-bold text-orange-600">AudioPhile Estore</h1>
-    <nav class="space-x-4">
-      <a href="shop.html" class="hover:text-orange-500">Shop</a>
-      <a href="cart.html" class="hover:text-orange-500">Cart</a>
-      <a href="login.html" class="hover:text-orange-500">Login</a>
-    </nav>
+<body class="bg-gray-300 text-white mt-10">
+    <header class="bg-gray-900 py-4 px-6 flex justify-between items-center">
+    <a href="shop.html" class="text-orange-600 font-bold text-lg">← Back to Shop</a>
+    <h1 class="text-xl font-bold text-white-500">AudioPhile Estore</h1>
+    <a href="cart.html" class="relative hover:text-gray-300">
+      🛒 <span id="cart-count" class="text-xs bg-orange-500 text-white px-2 rounded-full absolute top-0 right-0">0</span>
+    </a>
   </header>
 
   <!-- Include AudiBot -->
@@ -44,10 +43,10 @@
     <img src="assets\cart\image-xx99-mark-one-headphones.jpg" alt="XX99 Mark I" class="rounded-lg shadow-lg w-full">
     <div>
       <h2 class="text-3xl font-semibold mb-4">XX99 Mark I Headphones</h2>
-      <p class="text-gray-600 mb-4">Classic audio engineering meets premium materials. These over-ear headphones deliver studio-grade sound with unmatched clarity and depth.</p>
+      <p class="text-gray-900 mb-4">Classic audio engineering meets premium materials. These over-ear headphones deliver studio-grade sound with unmatched clarity and depth.</p>
       <p class="text-xl font-bold text-orange-600 mb-6">$1,299.00</p>
       <label class="block mb-2">Quantity:</label>
-      <input type="number" value="1" min="1" class="w-20 mb-6 px-2 py-1 border rounded">
+      <input type="number" value="1" min="1" class="w-20 mb-6 px-2 py-1 text-gray-600 border rounded">
       <button class="mt-2 w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Add to Cart</button>
     </div>
   </main>
