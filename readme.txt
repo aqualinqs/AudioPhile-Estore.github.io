@@ -89,8 +89,11 @@ git clone https://github.com/aqualinqs/AudioPhile-Estore.github.io.git
 ---
 
 ## 🌍 Live Demo
-
+    **Github Pages**
 👉 [https://aqualinqs.github.io/AudioPhile-Estore](https://aqualinqs.github.io/AudioPhile-Estore)
+
+    **Vercel version**
+👉 https://audiophile-estore.vercel.app/
 
 ---
 
